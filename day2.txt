@@ -1,0 +1,107 @@
+
+public class task1 {
+    public static void Main(string[] args) {
+        int number1 = int.MaxValue;
+        int number2 = int.MaxValue;
+        long result = (long)number1 + (long)number2;
+        Console.WriteLine(number1 + " + " + number2 + " " + result);
+
+        // Console.WriteLine(long.MaxValue);
+        //Console.WriteLine(short.MaxValue);
+    }
+}
+
+
+public class ArmstrongNumber
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter A number :");
+        int Number = Convert.ToInt32(Console.ReadLine());
+        int duplicate = Number;
+        int length = 0, result = 0;
+        while(duplicate > 0)
+        {
+            duplicate /= 10;
+            length++;
+        }
+        duplicate = Number;
+        while(duplicate > 0)
+        {
+            int remainder = duplicate % 10;
+            int ExponentValue = 1;
+            for(int i = 0; i < length; i++)
+            {
+                ExponentValue = ExponentValue * remainder;
+            }
+            result += ExponentValue;
+            duplicate /= 10;
+        }
+        if(result == Number)
+        {
+            Console.WriteLine("Armstrong Number");
+        }
+        else
+        {
+            Console.WriteLine("Non Armstrong number");
+        }
+    }
+}
+
+public class BillGenerator
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Number of Pizza :");
+        int pizzaCount = int.Parse(Console.ReadLine());
+        Console.WriteLine("Number of Puffs :");
+        int puffsCount = int.Parse(Console.ReadLine());
+        Console.WriteLine("Number of Pepsi :");
+        int pepsiCount = int.Parse(Console.ReadLine());
+
+        double total = (pizzaCount * 300) + (puffsCount * 50) + (pepsiCount * 130);
+
+        double GST = total * 0.09;
+        double CESS = total * 0.09;
+        double finalTotal = total + GST + CESS;
+
+        Console.WriteLine();
+        Console.WriteLine("Amount To pay :" + (int)finalTotal);
+        Console.WriteLine();
+        Console.WriteLine("GST :" + (int)GST);
+        Console.WriteLine("CESS :" + (int)CESS);
+
+    }
+}
+
+public class SumofDigit
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter a Three digit number :");
+        int Number = Convert.ToInt32(Console.ReadLine());
+        int Duplicate = Number;
+        int Result = 0;
+        while (Duplicate != 0)
+        {
+            int remainder = Duplicate % 10;
+            Result += remainder;
+            Duplicate /= 10;
+        }
+        Console.WriteLine("Sum of Three digits is "+Result) ;
+    }
+}
+
+
+
+public class task1 {
+    public static void Main(string[] args) {
+        int number1 = int.MaxValue;
+        int number2 = int.MaxValue;
+        long result = (long)number1 + (long)number2;
+        Console.WriteLine(number1 + " + " + number2 + " " + result);
+
+        // Console.WriteLine(long.MaxValue);
+        //Console.WriteLine(short.MaxValue);
+    }
+}
