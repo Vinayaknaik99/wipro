@@ -1,0 +1,199 @@
+1.  Write a c# program to convert number in characters. 
+
+	Input :  123
+	Output :  one two three 
+	
+	Input :  2024
+	Output :  two zero two four
+
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a number: ");
+        string input = Console.ReadLine();
+
+        string result = ConvertNumberToWords(input);
+        Console.WriteLine("Output: " + result);
+    }
+
+    static string ConvertNumberToWords(string number)
+    {
+        string[] words = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
+
+        string result = string.Empty;
+
+        foreach (char digit in number)
+        {
+            // Check if the character is a digit
+            if (char.IsDigit(digit))
+            {
+                int digitValue = (int)char.GetNumericValue(digit);
+                result += words[digitValue] + " ";
+            }
+            else
+            {
+                result += "[Invalid character] ";
+            }
+        }
+
+        return result.Trim(); // Remove the trailing space
+    }
+}
+
+
+
+
+		 
+3.   		Write a c# program to  implement the following requirement:
+
+			a.   Read some numbers from user  (around 20 numbers)
+			b.   Find out sum of all even numbers 
+			c.    Find out sum of odd numbers
+			d.    Finally display the results 
+			
+			Hint :  Use loops to implement the above requirement 
+
+
+
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Initialize sums for even and odd numbers
+        int evenSum = 0;
+        int oddSum = 0;
+
+        // Read 20 numbers from the user
+        Console.WriteLine("Enter 20 numbers:");
+
+        for (int i = 0; i < 20; i++)
+        {
+            // Parse the input number
+            Console.Write($"Enter number {i + 1}: ");
+            int number = int.Parse(Console.ReadLine());
+
+            // Check if the number is even or odd and update the corresponding sum
+            if (number % 2 == 0)
+            {
+                evenSum += number;
+            }
+            else
+            {
+                oddSum += number;
+            }
+        }
+
+        // Display the results
+        Console.WriteLine($"Sum of even numbers: {evenSum}");
+        Console.WriteLine($"Sum of odd numbers: {oddSum}");
+    }
+}
+
+
+
+
+
+4.    	Write a c# program to  implement the following requirement:
+
+		a.   Read five product prices and corresponding quantities from user 
+		b.   Find out total amount for all produts 
+		c.    Finally display the total amount 
+			
+			Hint :  Use loops to implement the above requirement 	
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Initialize total amount
+        double totalAmount = 0;
+
+        // Read prices and quantities for five products from the user
+        for (int i = 1; i <= 5; i++)
+        {
+            // Read the price of the product
+            Console.Write($"Enter the price of product {i}: ");
+            double price = double.Parse(Console.ReadLine());
+
+            // Read the quantity of the product
+            Console.Write($"Enter the quantity of product {i}: ");
+            int quantity = int.Parse(Console.ReadLine());
+
+            // Calculate the amount for the current product
+            double amount = price * quantity;
+
+            // Add the amount to the total amount
+            totalAmount += amount;
+        }
+
+        // Display the total amount
+        Console.WriteLine($"The total amount for all products is: {totalAmount}");
+    }
+}
+
+
+
+2.Write a c# program to generate the following series using loops in c#:
+ 
+		 a.  1  4  9  16   25  36  49  64  81 100
+		 b.  0   1    1   2   3  5  8  13  21  34  55 89 144 
+		 c.   3   5   6   9    10  12  15  18  20  21 24  25  27  30
+
+﻿using System;
+
+namespace ConsoleApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+
+
+            i = 1;
+            while( i <= 20)
+            {
+                Console.Write("{0}  ",i);
+                i++;
+            }
+
+            Console.WriteLine("\n-----------------------------");
+
+            i = 0;
+            do
+            {
+                Console.Write("{0}  ", i);
+                i = i + 2;              
+            } while (i <= 50);
+
+            Console.WriteLine("\n-----------------------------");
+
+            for (int j = 1; j <= 10; j++)
+            {
+                Console.Write("{0}  ", j);
+            }
+
+            Console.WriteLine("\n-----------------------------");
+
+            // 50  45  40 35 30 .............  5
+
+            for (int j = 50; j >= 5; j = j-5)
+            {
+                Console.Write("{0}  ", j);
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
