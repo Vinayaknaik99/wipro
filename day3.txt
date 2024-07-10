@@ -1,0 +1,169 @@
+public class CalculateDateBetee2dates
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter the 1st date :");
+        DateTime date1 = DateTime.Parse(Console.ReadLine());
+        Console.WriteLine("Enter the 2nd date :");
+        DateTime date2 = DateTime.Parse(Console.ReadLine());
+
+
+        Console.WriteLine((date2 - date1).TotalDays);
+    }
+}
+
+
+
+public class Afte10days
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter the Date (dd-mm-yyy)");
+        DateTime date = Convert.ToDateTime(Console.ReadLine());
+        DateTime resultDate = date.AddDays(10);
+        Console.WriteLine("After 10 Days : "+ resultDate.ToString("dd-MM-yyyy"));
+    }
+}
+
+
+public class FormatDateTime
+{
+    public static void Main(string[] args)
+    {
+        DateTime date =  DateTime.Now;
+        Console.WriteLine(date.ToString("dddd,dd MMM,yyyy, hh:mm tt"));
+    }
+}
+
+
+
+public class PatientDetails {
+    public static void Main(string[] args) {
+        Console.WriteLine("Enter the patient Details :");
+        Console.Write("Enter Patient Name :");
+        string patientName = Console.ReadLine();
+
+        Console.Write("Enter patient's Gender M (male) or F (female):");
+        char patientGender = char.Parse(Console.ReadLine());
+
+        Console.Write("Enter Patient Age :");
+        int patientAge = int.Parse(Console.ReadLine());
+
+        Console.Write("Enter Patient Blood Group :");
+        string patientBloodGrp = Console.ReadLine();
+
+        
+        
+        Console.Write("Patient DOB (dd-mm-yyyy) : ");
+        DateTime dob = DateTime.Parse(Console.ReadLine());
+
+        Console.Write("Patient Phone Number :");
+        long phonenumber = long.Parse(Console.ReadLine());
+
+        Console.Write("Real Patient? true/false :");
+        bool isPatient = bool.Parse(Console.ReadLine());
+
+        Console.WriteLine("Entry Time : "+ DateTime.Now);
+
+    }
+}
+
+
+
+
+public class ProductDetails {
+    public static void Main(String[] args) {
+        Console.Write("Enter the product Id :");
+        int productId = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter the product name :");
+        string productName = Console.ReadLine();
+
+        Console.Write("Enter the product price :");
+        int productPrice = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter the product quantity :");
+        int productQuantity = Convert.ToInt32(Console.ReadLine());
+
+
+        int totalAmount = productQuantity * productPrice;
+        double discount = 0;
+
+        if (totalAmount > 1000) {
+            discount = 0.1;
+        }
+        else if (totalAmount > 3000) {
+            discount = 0.15;
+        }
+        else if (totalAmount > 5000) {
+            discount = 0.2;
+        }
+
+        Console.WriteLine("---------------------------------------------------");
+        Console.WriteLine("Product Details");
+        Console.WriteLine("````````````````");
+        Console.WriteLine("Product Id : " + productId);
+        Console.WriteLine("Product Name : " + productName);
+        Console.WriteLine("Product Price : " + productPrice);
+        Console.WriteLine("Prosuct Quantity " + productQuantity);
+        Console.WriteLine();
+        Console.WriteLine("----------------------------------------------------");
+        Console.WriteLine("Total Amount : " + totalAmount);
+
+        discount = (double)totalAmount * discount;
+        Console.WriteLine("Discount : " + discount);
+
+        Console.WriteLine("Amount to pay : " + (totalAmount - discount));
+
+    }
+}
+
+
+
+
+
+namespace UdemyCourse {
+    public class UdemyCourseEntries {
+        public static void Main(String[] args) {
+            DateTime courseOn = new DateTime(2024, 6, 25);
+            DateTime lastDate = new DateTime(2024, 6, 20);
+
+            const int COURSE_FEE = 25000;
+
+            Console.WriteLine("Udemy Cloud Computing course registration form ");
+            Console.WriteLine("-------------------------------------");
+
+            Console.Write("Enter Name :");
+            string name = Console.ReadLine();
+
+            Console.Write("Enter Phone number :");
+            int phoneNumber = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter Email ID :");
+            string email = Console.ReadLine();
+
+            Console.Write("Applying date (dd-mm-yyy):");
+            DateTime applyingDate = DateTime.Parse(Console.ReadLine());
+
+
+            Console.Write("Already Subscribed (True/False)");
+            bool isSubscribed = bool.Parse(Console.ReadLine());
+
+            double remainingDate = (courseOn - applyingDate ).TotalDays;
+
+            if (isSubscribed && remainingDate < 5) {
+                Console.WriteLine("Need to Pay 15% late fee :" + (COURSE_FEE * 0.15));
+                Console.WriteLine("Total fee to pay : " + (COURSE_FEE + (COURSE_FEE * 0.15)));
+            }
+            else if (remainingDate<5 && remainingDate<=10){
+                Console.WriteLine((COURSE_FEE * 0.1) + " Will be provided");
+            }
+            else if (remainingDate > 10) {
+                Console.WriteLine((COURSE_FEE * 0.15) + " Will be provided");
+            }
+
+
+
+        }
+    }
+}
