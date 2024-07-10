@@ -1,0 +1,494 @@
+1. Open www.leetcode.com
+
+2. login with the credentials (Asking for user email and password)
+
+3. Menu -> Problems
+	choose problems from the menu.
+
+4. Redirecting to another page for choosing the problem
+
+5. Dificulty -> Easy, Medium, Hard
+	Select Easy from Dificulty Filter menu.
+
+6. Problems with easy level are shown below, Click on a problem to solve.
+
+7. It Redirect to the page for writing the code.
+
+8. write the code in text editor area.
+
+9. click submit to check the result
+
+. Write the Pseudocode to Calculate the sum of digits of the number given by user
+Eg: 456=4+5+6=15
+
+
+Algorithm
+
+1. Declare a variable called num
+2. And get the value for variable num
+3. Declare another variable called result and set value to 0
+4. While loop until num is less than or equal to 0
+	Declare variable to store Remaninder called rem
+	seperate the last digit from the number using %10 (modulus) operator.
+	Add remainder to result variable.
+	Then Remove the last digit from the number using /10
+5. Display the result.
+
+Pseudocode
+
+1.Start
+2.Declare int num = 456
+3.Declare result = 0
+4.while(num is greater than 0)
+	Declare int rem = num%10
+	Add result = result+rem
+	remove last digit num = num/10
+5.print result
+6.Stop
+
+ Write the Pseudocode to calcualte the area of a rectangle, square and circle
+
+
+Algorithm
+
+1.Declare the variable called Shape and the shape from user
+2.Check if shape is Rectangle
+	Declare length and width and get the value from the user
+	declare Area and store the area of the rectangle
+	Print Area
+3.Check if shape is "Square"
+	Declare variable called Side and get it from the user
+	Declare variablle called Area and stored the area of the square
+	print Area
+4.Check if shape is "Circle"
+	Declare variable called radius and get value from user
+	Declare variablle called Area and stored the area of the Circle
+	print Area
+
+
+
+1.start
+2.Declare string shape;
+3.if shape == "Rectangle"
+	Declare int length, Width;
+	Declare int Area = length*Width
+	Print Area
+4.if shape == "Square"
+	Declare int Side
+	Declare int Area = Side*Side
+	Print Area
+5.if shape == "Circle"
+	Declare int radius
+	Declare int Area = 3.14*radius*radius
+	Print Area
+
+
+Write the Pseudocode to calculate the average of 5 marks accepted from user. If the average is between 75-90 print excellent, 
+60-75 print good and 45-60 pass below 45 fail
+
+
+Algorithm
+
+
+1.Declare variables Mark1,Mark2,Mark3,Mark4,Mark5 and the values of earch marks
+2.Declare Average to store the average of 5 marks.
+3.Add all the marks and divide it by 5 to get the average
+4.if average is 65 to 75 print good
+5.or average is 45 to 65 print pass
+6 or average is below 45 print fail
+
+
+Pseudocode
+
+1.Declare int Mark1,Mark2,Mark3,Mark4,Mark5
+2.Declare int Average
+3.Average = (Mark1+Mark2+Mark3+Mark4+Mark5)/5
+4.if Average> 65 and Average<75
+	print "Good"
+5.Else if Average>45 and Average<65
+	print "Pass"
+6.Else if Average<45
+	print "Fail"
+
+
+
+open. www.amozan.com, it converts ip address,send  http requised
+menu
+go  to electronics
+then i select boat earphone
+then select buy now 
+then  i enter email prees continue
+then i enter password
+then i have log in
+then  slect item
+select all colr,contity
+they select  buy
+then do payment
+then select upi or cash
+after that confirm ypur order
+
+
+
+Start
+  
+  |
+  v
+User Visits Website
+  |
+  v
+Search for Product earphone
+  |
+  v
+Browse Results
+  |
+  
+Select Product(boat)
+  |
+  v
+View Product Details
+  |
+  v
+Add to Cart
+  |
+  v
++-------------------------+
+| Continue Shopping       |
+|     or                  |
+| Proceed to Checkout     |
++-------------------------+
+  |                       | 
+  v                       
+Search for Product        Review Cart
+  |                       |
+  v                       v
+
+Browse Results         Sign In or Create Account
+  |                       |
+  v                       v
+Select Product         Enter Shipping Information
+  |                       |
+  v                       v
+View Product Details  Select Shipping Method
+  |                       |
+  v                       v
+Add to Cart           Enter Payment Information
+  |                       |
+]  v                       v
++-------------------------+
+| Continue Shopping       |
+|     or                  |
+| Proceed to Checkout     |
++-------------------------+
+
+
+using System;
+class Program
+{
+satatic void main()
+{
+int num1 = 5;
+int num2 =10;
+int num3 = 15;
+int sum = num1 +num2 =num3;
+Console.WriteLine("The total is:" + total);
+}
+}
+
+
+using System;
+class Prgram
+{
+static void main()
+{
+int num1 =5;
+int num2 =10;
+int num3 = 20;
+int total = num1 + num2 +num3;
+Console.WroteLine("the total is:"  + total);
+}
+}
+using System
+
+class Program
+{
+static voin main()
+{
+int num1 = 10;
+int num2 = 5;
+int num3  = 30;
+int  total = num1  + num2 +num3;
+Console.WriteLine(
+}
+
+
+
+
+
+
+
+Write the Pseudocode to Calculate the sum of digits of the number given by user
+Eg: 456=4+5+6=15
+ 
+2. Write the Pseudocode to calcualte the area of a rectangle, square and circle
+ 
+3. Write the Pseudocode to calculate the average of 5 marks accepted from user. If the average is between 75-90 print excellent, 
+60-75 print good and 45-60 pass below 45 fail
+
+
+
+
+	1.BEGIN
+        PRINT "Enter a number:"
+    READ number
+
+       SET sum TO 0
+    SET temp TO number
+
+        WHILE temp > 0
+                SET digit TO temp MOD 10
+        
+                SET sum TO sum + digit
+        
+                SET temp TO temp DIV 10
+    END WHILE
+
+       PRINT "The sum of the digits is: " + sum
+	END
+
+
+
+2.	BEGIN
+       PRINT "Enter the length of the rectangle:"
+    READ length
+    PRINT "Enter the width of the rectangle:"
+    READ width
+    SET area_rectangle TO length * width
+    PRINT "The area of the rectangle is: " + area_rectangle
+
+        PRINT "Enter the side length of the square:"
+    READ side
+    SET area_square TO side * side
+    PRINT "The area of the square is: " + area_square
+
+       PRINT "Enter the radius of the circle:"
+    READ radius
+    SET pi TO 3.14159  // Approximate value of pi
+    SET area_circle TO pi * radius * radius
+    PRINT "The area of the circle is: " + area_circle
+	END
+
+
+
+
+   3. BEGIN
+      PRINT "Enter mark 1:"
+    READ mark1
+    PRINT "Enter mark 2:"
+    READ mark2
+    PRINT "Enter mark 3:"
+    READ mark3
+    PRINT "Enter mark 4:"
+    READ mark4
+    PRINT "Enter mark 5:"
+    READ mark5
+
+       SET total TO mark1 + mark2 + mark3 + mark4 + mark5
+    SET average TO total / 5
+
+        IF average >= 75 AND average <= 90 THEN
+        PRINT "Excellent"
+    ELSE IF average >= 60 AND average < 75 THEN
+        PRINT "Good"
+    ELSE IF average >= 45 AND average < 60 THEN
+        PRINT "Pass"
+    ELSE IF average < 45 THEN
+        PRINT "Fail"
+    END IF
+	END
+
+using System;
+ class Progrm
+{
+static void main(){
+int marks1,maarks,mark3,marks4,mark5;
+Console.WriteLine("enter the mark1 :");
+mark1=Convets.ToInt32(Console.ReadLine());
+
+Console.WriteLine("enter the marks2  :");
+marks2=Converts.ToInt32(Console.ReadLine());
+
+
+Console.WrirteLine("enter marks3 :");
+marks3 =Converts.ToInt32(ConsoleReadLine());
+
+
+
+Console.WriteLine("Enter marks4:");
+marks4=Converts.toInt32(Console.ReadWrite());
+
+
+Console.WriteLine("enter the marks4");
+marks5=Convert.ToInt33(Console.readLine());
+
+int Total = marks1+marks+ marks3 +marks4+marks5;
+double average=  tital/5.0;
+
+
+
+
+if(average >=75 && average <=90)
+{
+Console.WriteLine("execulent");
+}
+else if (average >= 60 && average <= 75)
+{
+Console.WriteLine("good")
+}
+else if (average >=  45 && average <= 60)
+{
+Console.WriteLine("pass")
+}
+else if (average <45 )
+{ 
+COnsole,WriteLine("fail")
+}
+}
+}
+
+
+local scope
+Variables declared within a method, constructor, or block are considered to have local scope. They are accessible only within the method or block where they are declared.
+
+methid scope
+Variables declared within a method, constructor, or block are considered to have local scope. They are accessible only within the method or block where they are declared.
+
+Class-Level Scope
+Variables declared as fields within a class (but outside any method) have class-level scope. They are accessible throughout the class but not outside of it.
+
+
+Static Scope
+Static variables belong to the class rather than any particular instance. They are shared among all instances of the class and are declared with the static keyword.
+
+ Namespace Scope
+Variables and types declared within a namespace have scope limited to that namespace. This scope is used to organize and group related classes and methods.
+
+
+ Global Scope (C# 9.0 and later)
+In C# 9.0 and later, you can use top-level statements and file-scoped namespaces. Variables declared in the global scope (outside any class or method) are not typical in traditional C# but can be used with top-level statements for simplicity.
+
+
+
+
+
+
+
+
+1. Definition and Purpose
+Variable:
+
+A variable is a storage location in memory with a name and a type. The value stored in a variable can change during the execution of the program.
+Example:
+csharp
+Copy code
+int age = 25; // Variable that can change its value
+Constant:
+
+A constant is a value that cannot be changed once it is set. Constants are used to define values that remain the same throughout the lifetime of the program.
+Example:
+csharp
+Copy code
+const int MaxAge = 120; // Constant value that cannot be changed
+2. Declaration and Initialization
+Variable:
+
+Variables are declared and can be initialized at runtime. They can be assigned a new value any number of times.
+Example:
+csharp
+Copy code
+int age = 25; // Declaration and initialization
+age = 30;     // Reassigning a new value
+Constant:
+
+Constants must be initialized at the time of declaration. They cannot be reassigned after their initial value has been set.
+Example:
+csharp
+Copy code
+const int MaxAge = 120; // Must be initialized here
+// MaxAge = 130; // Error: Cannot assign to 'MaxAge' because it is a 'const'
+3. Scope
+Variable:
+
+Variables can have various scopes (local, class-level, instance, static) and are accessible within their defined scope.
+Example:
+csharp
+Copy code
+class Example
+{
+    int instanceVariable = 10; // Class-level variable
+    static int staticVariable = 20; // Static variable
+
+    void Method()
+    {
+        int localVariable = 30; // Local variable
+    }
+}
+Constant:
+
+Constants are typically defined at the class level, but they can also be local constants. They have the same scope as variables, but their value remains fixed.
+Example:
+csharp
+Copy code
+class Example
+{
+    const int ClassLevelConstant = 100; // Class-level constant
+
+    void Method()
+    {
+        const int LocalConstant = 200; // Local constant
+    }
+}
+4. Usage and Modification
+Variable:
+
+Variables can be modified during runtime. They are useful when you need to store values that will change throughout the program.
+Example:
+csharp
+Copy code
+int count = 0;
+count++; // count is now 1
+Constant:
+
+Constants are used to store values that do not change. They are often used for values that represent fixed configuration or limits.
+Example:
+csharp
+Copy code
+const int MaxAttempts = 5;
+// MaxAttempts++; // Error: Cannot modify a constant
+5. Memory Allocation
+Variable:
+Variables are allocated on the stack or heap depending on their type and scope. Their memory location is not fixed and can be changed.
+Constant:
+Constants are evaluated at compile time, and their values are typically embedded directly into the code. This can lead to more optimized code as the value is fixed and known during compilation.
+6. Performance
+Variable:
+
+Variables involve runtime memory operations, which might be slightly slower compared to constants in some cases.
+Constant:
+
+Constants are replaced with their value at compile time, which can make access faster and potentially improve performance.
+
+
+
+
+
+
+
+
+
+In C#, the maximum value that can be stored in an int (also known as Int32) is determined by its data type. The int type in C# is a 32-bit signed integer. Here’s the detail:
+
+int (Int32) in C#
+Data Type: int
+Bit Size: 32 bits
+Range: From -2,147,483,648 to 2,147,483,647
+
