@@ -1,0 +1,27 @@
+b.   Print each word of the given string  in a new line.
+					Eg:   Input :   Welcome to C# Programming
+							Output:   		Welcome 
+													to 
+													C# 
+													Programming 
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine();
+        PrintWordsInNewLines(input);
+    }
+
+    static void PrintWordsInNewLines(string str)
+    {
+        string[] words = str.Split(' ');
+        foreach (string word in words)
+        {
+            Console.WriteLine(word);
+        }
+    }
+}
