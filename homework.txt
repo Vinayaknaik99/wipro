@@ -1,0 +1,190 @@
+day1   
+
+1.   Write algorithm and pseudo code the following requirement:
+	a.   Find out simple interest calculation based on the given inputs.
+	
+2. Write algorithm and pseudo code the following requirement:
+	
+		a.  Check the given number is prime number or not 
+		b.  Display 5 multiples that are less than 100
+		c.   Find out how many even numbers and odd numbers  in the given array	
+	
+ 
+3.  Write algorithm and pseudo code that outlines the logic for a user login process. It should include conditional for successful and unsuccessful login attempts, and a loop that allows a user three attempts before locking the account.
+
+
+
+
+day 2
+
+
+
+1. Write a C# Program to process the employee details as per the below instructions:
+			a.   Read  employee id, name,  basic salary,  is contract employee, deptno, email id 
+			b.   Find out total salary by calculating HRA - 15%,  MA - 10%,  TA - 15%  
+			
+						Net Salary =  basic + HRA + MA + TA
+						
+			c.    Finally display all the details on the console window. 
+			
+			
+			HRA :   House Rent Allowance
+			MA :  Medical Allowance
+			TA :  Travel Allowance
+			
+		
+
+2.   Generate  Bill Details
+
+-->  AMB Mall multiplex is developing application for its cafeteria. The application should be able to calculate the bill details for the following scenario. You bought pizzas, puffs and cool drinks. 
+
+	Consider   the following prices :
+    Rs.300/pizza
+    Rs.50/puffs
+    Rs.130/pepsi
+		
+	Generate a bill.
+	
+	a.  Read No. pizzas, puffs, pepsis from user
+	b.  The bill details must include the total cost of pizzas, total cost of puffs and total cost of pepsis. 
+	c.   Calculate the grand total and display.
+	d.  Display the GST and CESS amount. GST is 9% and CESS is 9% of the total price.
+
+ 
+
+ 
+		
+day3
+
+
+1.  Write a c# program to implement the following requirement:
+			a.  Try to add sum of two integers 
+			b.  Each integers variable should holds the maximum of value of integers
+			c.   Check the result if there is any issue.  
+			d.  Try to solve with appropriate data types. 
+			
+2.  Write a C# program to implement the following requirement:
+			
+			a.  Read product information :  product id, pname, unit price, quantity 
+			b.  Find the total amount.   
+			c.   Apply the following conditions:
+							i.   Give 10%  discount, if amount is greater than 1000
+							ii.   Give 15%  discount, if amount is greater than 3000
+							iii.   Give 20%  discount, if amount is greater than 5000
+							
+3.   Apex medical clinic want to maintain the patients records. Develop the application to maintain patients details
+
+			a.  Need to create required no. of variables  to store patients details
+			b.  It should include all data types :   int, string, bool, double, datetime 
+			c.  Minium 8  details need to be store about a patient
+			
+
+4.   Udemy is launching a special course on cloud computing on 25th June, 2024. Consider the following requirement and design the application.  Registration last date : 20th June. 
+
+			a.   Need to store subscribers details. You can decide required information 
+			b.   Consider course fee :  INR. 25000
+			c.    Provide 10%  if the subscriber registered before 10th June
+			d.    Provide 15%  if the subscriber registered before 15th June
+			e.     Subscribers are allowed to register after 20th June with 5% late fee. 
+			f.      Finally Display subscriber detail
+			
+
+			
+day4
+
+
+1.  Write a c# program to convert number in characters. 
+
+	Input :  123
+	Output :  one two three 
+	
+	Input :  2024
+	Output :  two zero two four
+	
+
+2.   Write a c# program to generate the following series using loops in c#:
+
+		 a.  1  4  9  16   25  36  49  64  81 100
+		 b.  0   1    1   2   3  5  8  13  21  34  55 89 144 
+		 c.   3   5   6   9    10  12  15  18  20  21 24  25  27  30
+		 
+3.   		Write a c# program to  implement the following requirement:
+
+			a.   Read some numbers from user  (around 20 numbers)
+			b.   Find out sum of all even numbers 
+			c.    Find out sum of odd numbers
+			d.    Finally display the results 
+			
+			Hint :  Use loops to implement the above requirement 
+			
+
+4.    	Write a c# program to  implement the following requirement:
+
+		a.   Read five product prices and corresponding quantities from user 
+		b.   Find out total amount for all produts 
+		c.    Finally display the total amount 
+			
+			Hint :  Use loops to implement the above requirement 	
+
+
+day5 
+
+Write a c# program to define the functions for following requirements:
+
+		a.   Find out factorial of the given number 
+		b.   Print each word of the given string  in a new line.
+					Eg:   Input :   Welcome to C# Programming
+							Output:   		Welcome 
+													to 
+													C# 
+													Programming 
+		c.   Find out sum of alternate digits of the given 5 digit number
+					Input :   12345
+					Output :     1 + 3 + 5  =  9 
+					
+		d.   Given two numbers a and b, the task is to find the GCD of the two numbers.
+
+
+day 6
+
+
+Assignments on Arrays in C#(12th July, 2024)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.  Write a C# Sharp program to find the second largest element in an array
+2.  Write a C# Sharp program to  reverse array elements without using pre-defined methods. 
+3.  Write a C# program to sort the array elements using Bubble sort technique. (Hint:  Do not use pre-defined methods ) 
+4. Write a C# program to read 2D Array elements from user. Consider 3 X 3 matrix. 
+5.  Write a program in C# Sharp for a 2D array of size 3x3 and print the matrix. 
+
+day7 
+
+
+1.  Create C# program to process customer details using object oriented programming.
+
+	•	Class Name :	Customer
+	•	Class should allow the following parameters in constructor
+				Customer c1   = new Customer();
+				Customer c2   = new Customer(10256);
+				Customer c3   = new Customer(10256, “Scott”);
+				Customer c4   = new Customer(10256, “Scott”, “Hyd”);
+
+	•	Declare required number of private and properties in the class (Hint Use regular properties). 
+	•	Method :  ShowDetails() to display all the values in single Line.
+				Eg:	Customer Details  ::   Id : 10256, Name : Scott, City : Hyd
+
+
+2.  Create C#  program to process product details using object oriented programming.
+	•	Class Name : Product	 
+	•	Create properties :   ProductId, ProductName, UnitPrice, Quantity	(Hint: Auto-Implemented Properties)
+	•	Constructor should allow productId as parameter
+	•	ProductId – should be readonly property		(Create readonly property for this)
+
+ 
+3.   Apex medical clinic want to maintain the patients records. Develop the application to maintain patients details using Object Oriented Programming.
+
+			a.  Create a class called PatientDetails. 
+			b.  Need to create required no. of properties  to store patients details
+			c.  It should include all data types :   int, string, bool, double, datetime 
+			d.  Minium 8  properties required to be store about a patient
+			e.  Create a method to display all the details 
+			
