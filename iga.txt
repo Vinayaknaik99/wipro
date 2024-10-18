@@ -1,0 +1,29 @@
+Assignment: Develop a Simple ASP.NET Core MVC Application with EF Core
+and Create a Virtual Machine on Azure
+Objective:
+Build a straightforward ASP.NET Core MVC application using EF Core to manage basic
+data, such as a Car Rental system. Additionally, set up a virtual machine (VM) in
+Azure. No deployment is required.
+Tasks
+Part 1: Develop the ASP.NET Core MVC Application with EF Core
+1. Project Setup:
+Create a new ASP.NET Core MVC Project using Visual Studio or VSCode.
+Name the project (e.g., CarRentalApp ).
+2. Create the Model:
+Define a Car model with the following fields:
+Id (Primary Key)
+Name (string)
+RentalPrice (decimal)
+IsAvailable (bool)
+
+3. Set Up EF Core:
+Install the necessary EF Core SQLite packages.
+Create a DbContext class to manage the Car data.
+4. Configure the Database:
+Use SQLite in the application to store the car rental data.
+5. Create Controller and Views for CRUD:
+Use Scaffolding to generate the CarController and its associated views.
+Ensure users can Add, View, Edit, and Delete car details.
+6. Test the Application Locally:
+Run the app and perform the CRUD operations to verify it works.
+Capture a screenshot showing the car data displayed in the browser.
